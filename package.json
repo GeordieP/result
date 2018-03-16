@@ -1,0 +1,12 @@
+{
+    "name": "@geordiep/result",
+    "version": "1.0.0",
+    "description": "Result type for status tracking",
+    "author": "@GeordieP <gp@gpow.ca>",
+    "license": "MIT",
+    "repository": "https://github.com/GeordieP/result",
+    "scripts": {
+        "test": "node test/test.js"
+    },
+    "main": "src/result.js"
+}
