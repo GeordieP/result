@@ -9,6 +9,8 @@ This module is intended to be flexible, and as such is very forgiving. No data t
 
 ## Install
 
+*NOTE:* Package isn't published on npm yet. However, `npm` and `yarn` both support installing directly from a GitHub repository:
+
 `npm install geordiep/result`
 
 or
@@ -31,6 +33,7 @@ const Result = require('@geordiep/result')
 Create Ok result using constructor:
 
 ```js
+// pass 'true' as first arg
 let res = new Result(true, 'my success value!')
 ```
 
@@ -42,10 +45,11 @@ let res = Result.newOk('my success value!')
 
 #### Type: Error
 
-Create Err result using constructor:
+Create Error result using constructor:
 
 ```js
 let myErrValue = new Error('encountered an error!')
+// pass 'false' as first arg
 let res = new Result(false, myErrValue, 'myModule @ myFunctionName()' 'err_something_went_wrong')
 ```
 
@@ -60,7 +64,7 @@ let res = Result.newError(myErrValue, 'myModule @ myFunctionName()' 'err_somethi
 
 *NOTE:* Assume a Result instance `res` is in current scope for the following examples.
 
-Check result is Ok, and use contained value
+Check result is Ok, and use contained value:
 
 ```js
 if (res.isOk()) {
@@ -69,7 +73,7 @@ if (res.isOk()) {
 }
 ```
 
-Check result is Error and use contained value, origin, and error type
+Check result is Error and use contained value, origin, and error type:
 
 ```js
 if (res.isError()) {
@@ -81,7 +85,7 @@ if (res.isError()) {
 ```
 
 
-Extract value from Result objects if Ok, or throw Result if Error using expect()
+Extract value from Result objects if Ok, or throw Result if Error using expect():
 
 *NOTE:* Assume Result instances `firstRes` and `secondRes` are in current scope for the following example.
 
