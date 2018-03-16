@@ -2,7 +2,7 @@
     "name": "@geordiep/result",
     "version": "1.0.0",
     "description": "Result type for status tracking",
-    "author": "@GeordieP <gp@gpow.ca>",
+    "author": "Geordie Powers <gp@gpow.ca> (http://gpow.ca)",
     "license": "MIT",
     "repository": "https://github.com/GeordieP/result",
     "scripts": {

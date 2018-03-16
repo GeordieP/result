@@ -9,13 +9,11 @@ This module is intended to be flexible, and as such is very forgiving. No data t
 
 ## Install
 
-*NOTE:* Package isn't published on npm yet. However, `npm` and `yarn` both support installing directly from a GitHub repository:
-
-`npm install geordiep/result`
+`npm install @geordiep/result`
 
 or
 
-`yarn install geordiep/result`
+`yarn install @geordiep/result`
 
 JavaScript import:
 
