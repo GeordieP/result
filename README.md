@@ -6,6 +6,9 @@ Created primarily for use in an Electron application when sending data through E
 
 This module is intended to be flexible, and as such is very forgiving. No data types are enforced, and all constructor arguments are technically optional (though omitting the first will cause things to break).
 
+- Yarn [@geordiep/result](https://yarnpkg.com/en/package/@geordiep/result)
+- npm [@geordiep/result](https://www.npmjs.com/package/@geordiep/result)
+- GitHub Repository: [github.com/GeordieP/result](https://github.com/GeordieP/result)
 
 ## Install
 
